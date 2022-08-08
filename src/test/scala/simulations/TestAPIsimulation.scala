@@ -16,7 +16,7 @@ class TestAPIsimulation extends Simulation{
 
     .exec(http("Get specific user")
       .get("public/v2/users/${userId}")
-      .check(jsonPath("$..id").is("3306"))
+      .check(jsonPath("$..id").is("3300"))
       //    .check(jsonPath("$..email").is("kanchan_pillai@greenfelder-ferry.biz"))
     )
 
