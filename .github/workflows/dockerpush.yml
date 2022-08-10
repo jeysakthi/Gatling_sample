@@ -1,4 +1,4 @@
-name: npm build, lint, test and publish
+name: publish
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       - name: docker build
         uses: actions/docker/cli@master
         with:
-          args: build -t ishanjainijs/github-action-example-node .
+          args: build -t jeysakthi/Gatling_sample .
       - name: docker login
         uses: actions/docker/login@master
         env:
